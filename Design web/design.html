@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            
+        }
+        .main{
+        height: 700px;
+        width: 100%;
+            background-image: url(background.jpg);
+            background-size: cover;
+        }
+        .navbar{
+            height: 60px;
+            background-color: rgb(12, 3, 39);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+
+        }
+        
+    
+
+        .nav-icon{
+            color: rgb(240, 236, 230);
+            height: 50px;
+            width: 400px;
+            position: relative;
+            font-size: 18px;
+            font-weight: 550;
+            display: flex;
+            align-items: center;
+            border-radius: 5px; 
+            border: 2px solid rgb(255, 255, 255);
+            background-color: rgb(30, 20, 95);
+            
+        }
+        .p-div{
+            margin-left: 5px;
+            height: 50px;
+            width: 100%;
+            border: 2px solid beige;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-right: 5px;
+            font-weight: 550;
+        }
+
+        .search{
+            height: 50px;
+            width: 300px;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            border: 2px solid white;
+        }
+        .searchcontent{
+            height: 50px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border: none;
+        }
+        .searchicon{
+            height: 50px;
+            width: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(30, 20, 95);
+        }
+        placeholder{
+            text-align: center;
+            background-color: aquamarine;
+        }
+        .content{
+            height: 300px;
+            width: 500px;
+            color: white;
+            margin-top: 280px;
+            margin-left: 25px;
+            text-align: center;
+    
+            
+           
+
+            
+        }
+        .content h1{
+            text-align: center;
+            font-family: 'Times New Roman';
+            margin-top: 15px;
+
+        }
+        .content button{
+            border: 3px solid rgb(255, 251, 251);
+            border-radius: 5px;
+            background-color: rgb(186, 111, 20);
+            height: 45px;
+            width: 150px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .mainarea{
+            display: flex;
+        }
+        .sign{
+            position: relative;
+            height: 400px;
+            width: 250px;
+            border: 3px solid rgb(255, 183, 2);
+            margin-top: 140px;
+            margin-left: 530px;
+            border-radius: 10px;
+            background-color: rgb(17, 17, 53);
+            color: white;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 30px;
+        
+
+        }
+        .search ::placeholder{
+            color: black;
+        }
+        .sign input{
+            height: 35px;
+            width: 100%;
+            border-bottom: 2px solid rgb(188, 125, 0);
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background-color: transparent;
+            letter-spacing: 1px;
+            margin-top: 30px;
+    
+
+        }
+        .sign h2{
+            color: white;
+            font-family: sans-serif;
+            font-size: 22px;
+            background-color: rgb(170, 113, 42);
+            border-radius: 10px;
+            padding: 10px;
+            width: 150px;
+            margin-left: 40px;
+           margin-top: 10px;
+           text-align: center;
+           padding: 8px;
+        }
+        ::placeholder{
+            color: white;
+            font-family: Arial;
+        }
+        .sign input :focus{
+            outline: none;
+        }
+        .sign button{
+            height: 50px;
+            width: 150px;
+            background-color: rgb(170, 113, 42) ;
+            color: white;
+            font-size: 16px;
+            padding: 10px;
+            margin-top: 20px;
+            margin-left: 50px;
+            border-radius: 10px;
+
+        }
+        .sign button a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .sign p{
+            text-align: center;
+            padding: 10px;
+            
+        }
+        .signup{
+            display: flex;
+            justify-content: space-evenly;
+            height: 30px;
+            font-size: 15px;
+    
+        }
+        .font{
+            display: flex;
+            justify-content: space-evenly;
+            height: 45px;
+            margin-top: 10px;
+            font-size: 30px;
+            padding-top: 20px;
+        }
+        .font :hover{
+            color: rgb(170, 121, 36);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="nav-icon">
+                <i class="fa-brands fa-square-web-awesome" style="font-size: 45px; margin-left: 5px;"></i>
+                <p style="margin-left: 5px;">Random Website</p>
+            </div>
+            <div class="p-div">
+            <p>Home</p>
+            <p>About</p>
+            <p>Service</p>
+            <p>Design</p>
+            <p>Contact</p>
+            <p>Rate Us</p>
+        </div>
+            <div class="search">
+               <input class="searchcontent" placeholder="type to search">
+               <p class="searchicon">Search</p>
+            </div>
+        </div>
+
+        <div class="mainarea">
+            <div class="content">
+            <h1> Web Development & Designing</h1><br> <h1>Training Course</h1><br>
+            <button>Join US</button>   
+        </div>     
+        <div class="sign">
+            <h2>Login Here</h2>
+            <input placeholder="Enter Email Here" class="email">
+            <input placeholder="Enter Password Here" class="email">
+            <br>
+            <button><a href="#">Login</a></button>
+            <p>Don't have an account</p>
+            <div class="signup">
+            <a style="margin-top:10px;">signup here</a>
+            <p>Login With</p></div>
+
+            <div class="font">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-whatsapp"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-solid fa-square-envelope"></i>
+    
+            </div>
+            </div>
+        </div>
+        
+
+        
+    </div>
+</body>
+</html>

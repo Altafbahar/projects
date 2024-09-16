@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0;
+          box-sizing: border-box;
+       
+
+        }
+        body{
+            background-color: rgb(201, 192, 208);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .container{
+            border-radius: 5px;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            width: 50%;
+            padding: 14px;
+            background-color: rgb(212, 241, 231);
+        }
+    
+        .input-container{
+            width: 100%;
+            max-width: 600px;
+        }
+        .input-container input{
+           
+            padding: 10px;
+            font-size: 16px;
+            margin-block: 10px;
+            border-radius: 5px;
+            border: none;
+            
+        }
+        .input-container input[type="text"]{
+            width: 70%;
+
+        }
+        .input-container input[type="button"]{
+            background-color: rgb(95, 200, 42);
+            cursor: pointer;
+            margin-left: 10px;
+            height: 40px;
+            width: 60px;
+            font-weight: 600;
+            color: white;
+        }
+        .input-container input[type="button"]:hover{
+            background-color: rgb(143, 245, 156);
+        }
+        ul{
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+        }
+        ul li{
+        
+            margin-block: 10px;
+            border-radius: 5px;
+            border: 0.25px solid black;
+            padding: 6px 12px;
+            width: 400px;
+            text-align: start;
+            margin-right: 100px;
+            background-color: rgb(245, 242, 238);
+            font-size: 16px;
+            height: 35px;
+            display: flex;
+            justify-content: space-between;
+            height: auto;
+        }
+        ul li p{
+            flex-grow: 1;
+        }
+        ul li:hover{
+            background-color: rgb(204, 170, 126);
+            transition: 0.5s;
+        }
+        .btn{
+            background-color: none;
+            border: none;
+            outline: none;
+            font-weight: 500;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .deleteBtn{
+            color: red;
+        }
+        .editBtn{
+            color: rgb(29, 169, 29);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="input-container">
+            <h1>My Todo List</h1>
+            <input type="text" placeholder="add to do objects ..." id="inputBox">
+            <input type="button" value="add" id="addBtn">
+            <br>
+        </div>
+        <ul class="todo-list" id="todoList">
+            <!-- <li>task1</li>
+             <li>task1</li>
+             <li>task1</li>
+             <li>task1</li>-->
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
